@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Job Application form"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="29dp" />
+
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview001"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Please complete the form below to apply for a position with us"
+                android:textAlignment="center"
+                android:textColor="@color/black_007" />
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:onClick="clickme"
+                android:shadowColor="@color/black_007"
+                android:text="Start Registration"
+                android:textColor="@color/teal_200" />
+
+
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="27dp"
+                android:hint="Enter first name"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:hint="Enter last name "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:gravity="left"
+                android:paddingTop="20dp"
+                android:text="GENDER"
+                android:textAlignment="textStart"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="RtlCompat" />
+
+
+            <RadioGroup
+                android:id="@+id/radiogrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview2"
+                    android:text="Male"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/check1"
+                    android:text="Female"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/check2"
+                    android:text="other"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogrp"
+                android:gravity="left"
+                android:paddingTop="20dp"
+                android:text="  HOBBIES"
+                android:textAlignment="textStart"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="RtlCompat" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3"
+                android:text="Swimming"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check4"
+                android:text="Touring"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check5"
+                android:text="Reading"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check6"
+                android:hint="Other hobbies"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:paddingTop="10dp"
+                android:text="ADDRESS"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview4"
+                android:hint="Enter Address"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginLeft="200dp"
+                android:paddingTop="10dp"
+                android:text="CITY"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview5"
+                android:layout_marginLeft="200dp"
+                android:hint="City"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginRight="200dp"
+                android:paddingTop="10dp"
+                android:text="STATE/PROVINCE"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview5"
+                android:layout_marginRight="200dp"
+                android:hint="State"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text6"
+                android:layout_marginRight="200dp"
+                android:text="PHONE"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview7"
+                android:layout_marginRight="200dp"
+                android:hint="Enter phone_no"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text5"
+                android:layout_marginLeft="200dp"
+                android:text="EMAIL"
+                android:textColor="@color/black_007"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview8"
+                android:layout_marginLeft="200dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text8"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"
+                android:textColor="@color/teal_200"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
